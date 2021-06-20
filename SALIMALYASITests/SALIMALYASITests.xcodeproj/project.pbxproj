@@ -10,6 +10,7 @@
 		096BF3D6267F4E4800572014 /* SALIMALYASITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 096BF3CC267F4E4800572014 /* SALIMALYASITests.framework */; };
 		096BF3DB267F4E4800572014 /* SALIMALYASITestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096BF3DA267F4E4800572014 /* SALIMALYASITestsTests.swift */; };
 		096BF3DD267F4E4800572014 /* SALIMALYASITests.h in Headers */ = {isa = PBXBuildFile; fileRef = 096BF3CF267F4E4800572014 /* SALIMALYASITests.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		096BF3E7267F4F6400572014 /* SALIMALYASI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096BF3E6267F4F6400572014 /* SALIMALYASI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		096BF3D5267F4E4800572014 /* SALIMALYASITestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SALIMALYASITestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		096BF3DA267F4E4800572014 /* SALIMALYASITestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SALIMALYASITestsTests.swift; sourceTree = "<group>"; };
 		096BF3DC267F4E4800572014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		096BF3E6267F4F6400572014 /* SALIMALYASI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SALIMALYASI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				096BF3CF267F4E4800572014 /* SALIMALYASITests.h */,
 				096BF3D0267F4E4800572014 /* Info.plist */,
+				096BF3E6267F4F6400572014 /* SALIMALYASI.swift */,
 			);
 			path = SALIMALYASITests;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				TargetAttributes = {
 					096BF3CB267F4E4800572014 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 					096BF3D4267F4E4800572014 = {
 						CreatedOnToolsVersion = 12.5;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				096BF3E7267F4F6400572014 /* SALIMALYASI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		096BF3E1267F4E4800572014 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = CV24DC768Z;
@@ -357,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MyALYASI.SALIMALYASITests;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +372,7 @@
 		096BF3E2267F4E4800572014 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = CV24DC768Z;
@@ -389,6 +397,7 @@
 		096BF3E4267F4E4800572014 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CV24DC768Z;
 				INFOPLIST_FILE = SALIMALYASITestsTests/Info.plist;
@@ -407,6 +416,7 @@
 		096BF3E5267F4E4800572014 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CV24DC768Z;
 				INFOPLIST_FILE = SALIMALYASITestsTests/Info.plist;
