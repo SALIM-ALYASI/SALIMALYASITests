@@ -1,12 +1,23 @@
-Pod::Spec.new do |s|
- s.name         = "SALIMALYASITests"
- s.version      = "1.0.0"
- s.summary      = "This is such a LOCO framework. Yah mon!"
- s.description  = "This is some super loco framework that was made by"
- s.homepage     = "https://github.com/SALIM-ALYASI/SALIMALYASITests.git"
- s.license      = "MIT"
- s.author       = {  "SALIM-ALYASI" => "r.m.alyasi@gmail.com" }
- s.platform     = :ios, "11.0.0"
- s.source_files  = "SALIMALYASITests/**/"
-   end
- 
+
+Pod::Spec.new do |spec|
+  spec.name         = 'SALIMALYASITests'
+   spec.version      = '1.0.0'
+  spec.authors      = {
+     "SALIM-ALYASI" => "r.m.alyasi@gmail.com"
+  }
+  spec.license      = {
+    :type => 'MIT',
+    :file => 'LICENSE'
+  }
+  spec.homepage     = 'https://github.com/SALIM-ALYASI/SALIMALYASITests'
+  spec.source       = {
+    :git => 'https://github.com/SALIM-ALYASI/SALIMALYASITests.git',
+    :branch => 'master',
+    :tag => spec.version.to_s
+  }
+  spec.summary      = 'Custom view for example on Medium.com'
+  spec.source_files = 'SALIMALYASITests/**/'
+  spec.swift_versions = '5.0'
+  spec.ios.deployment_target = :ios, '11.0'
+  
+ end
